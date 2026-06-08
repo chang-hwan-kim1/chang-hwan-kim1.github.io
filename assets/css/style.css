@@ -316,8 +316,9 @@ a:hover { text-decoration: underline; }
 
 .research-img-half {
   width: calc(50% - 5px);
-  height: auto;
+  height: 260px;
   border-radius: 6px;
+  object-fit: contain;
   display: block;
 }
 
