@@ -21,7 +21,6 @@
       </div>
 
       <h1 class="name">Chang Hwan Kim</h1>
-      <p class="alias">Call me <em>"Hwan"</em> <span class="phonetic">(Hwa-an)</span></p>
 
       <div class="affil">
         <p>Ph.D. Student</p>
@@ -64,15 +63,14 @@
     <section id="about" class="section">
       <h2 class="section-title">About</h2>
       <div class="about-text">
-        <p>I am a Ph.D. student in Mechanical Engineering at the University of Michigan, advised by <a href="https://websites.umich.edu/~orosz/" target="_blank">Prof. Gabor Orosz</a>. My research focuses on autonomous and connected vehicle control, with particular interest in Model Predictive Control (MPC) and Control Barrier Function (CBF) frameworks.</p>
+        <p>I am a Ph.D. student in Mechanical Engineering at the University of Michigan, advised by <a href="https://websites.umich.edu/~orosz/" target="_blank">Prof. Gabor Orosz</a>. My research focuses on vehicle dynamics and control, with particular interest in Model Predictive Control (MPC) and Control Barrier Function (CBF) frameworks.</p>
         <p>Previously, I received a B.S. degree in Mechanical Engineering (<em>summa cum laude</em>) from Yonsei University in 2024, and completed my M.S. at Yonsei University in 2026 under the supervision of <a href="https://ieeexplore.ieee.org/author/37086218016" target="_blank">Prof. Jun Young Yoon</a>. My master's research centered on a 6-DOF magnetic levitation system with DNN-approximated MPC implemented on FPGA for 10 kHz real-time control.</p>
         <p>My research interests include:</p>
         <ul class="interest-list">
+          <li>Vehicle dynamics and control</li>
           <li>Model Predictive Control (MPC)</li>
           <li>Control Barrier Functions (CBF)</li>
-          <li>Vehicle dynamics and autonomous vehicle control</li>
           <li>Design and motion control of mechatronics systems</li>
-          <li>FPGA-based real-time control</li>
         </ul>
       </div>
     </section>
@@ -87,7 +85,10 @@
           <span class="research-venue">IEEE Transactions on Industrial Informatics</span>
         </div>
         <h3 class="research-title">DNN-Approximated Offset-Free MPC on FPGA for 10-kHz Constrained Control of 6-DOF Magnetic Levitation System</h3>
-        <img src="assets/images/research_mpc.png" alt="Offset-Free MPC for 6-DOF Magnetic Levitation" class="research-img" />
+        <div class="research-img-row">
+          <img src="assets/images/research_mpc1.png" alt="Offset-Free MPC for 6-DOF Magnetic Levitation" class="research-img-half" />
+          <img src="assets/images/research_mpc2.png" alt="Offset-Free MPC for 6-DOF Magnetic Levitation results" class="research-img-half" />
+        </div>
         <p class="research-desc">Model predictive control (MPC) is well known for its high performance in motion control applications. However, due to the requirement of kHz-level sampling rates in 6-DOF magnetic levitation systems, MPC has rarely been applied to such systems. I develop an MPC structure lightweight enough for 10 kHz real-time control while achieving offset-free tracking performance, with a DNN approximating the QP solver and implemented on FPGA.</p>
         <div class="research-pubs">
           <p class="pub-entry">C.H. Kim, H.M. Yoon, J.W. Jeong, E.K. Kim and J.Y. Yoon, "DNN-Approximated Offset-Free MPC on FPGA for 10-kHz Constrained In-Plane Control of 6-DOF Magnetic Levitation System," <em>IEEE Transactions on Industrial Informatics</em> (under review).</p>
@@ -96,16 +97,17 @@
 
       <article class="research-item">
         <div class="research-meta">
-          <span class="research-tag review">Minor Revision</span>
+          <span class="research-tag review">under review</span>
           <span class="research-venue">IEEE/ASME Transactions on Mechatronics</span>
         </div>
         <h3 class="research-title">Design and Control of a Novel 6-DOF Magnetic Levitator</h3>
         <div class="research-img-row">
           <img src="assets/images/research_dual_lev1.gif" alt="6-DOF Magnetic Levitator design" class="research-img-half" />
+          <img src="assets/images/research_dual_lev2.png" alt="6-DOF Magnetic Levitator results" class="research-img-half" />
         </div>
         <p class="research-desc">A novel 6-DOF magnetic levitator combining reluctance and Lorentz forces to achieve both long-stroke actuation and zero-power gravity compensation. Unlike conventional Lorentz-only systems that require constant current, the proposed dual-mode design uses reluctance forces for passive gravity support and Lorentz forces for dynamic motion. A working prototype demonstrated stable levitation with only 0.498 W power consumption at rest.</p>
         <div class="research-pubs">
-          <p class="pub-entry">C.H. Kim, H.M. Yoon, J.W. Jeong, E.K. Kim and J.Y. Yoon, "Design and Control of Dual Reluctance-Lorentz 6-DOF Magnetic Levitator for In-Plane Long-Stroke Motion and Low-Power Vertical Levitation," <em>IEEE/ASME Transactions on Mechatronics</em> (minor revision).</p>
+          <p class="pub-entry">C.H. Kim, H.M. Yoon, J.W. Jeong, E.K. Kim and J.Y. Yoon, "Design and Control of Dual Reluctance-Lorentz 6-DOF Magnetic Levitator for In-Plane Long-Stroke Motion and Low-Power Vertical Levitation," <em>IEEE/ASME Transactions on Mechatronics</em> (under review).</p>
         </div>
       </article>
 
@@ -212,7 +214,7 @@
         <h3 class="pub-group-title">Papers</h3>
         <ol class="pub-list">
           <li class="pub-entry-full">C.H. Kim, H.M. Yoon, J.W. Jeong, E.K. Kim and J.Y. Yoon, "DNN-Approximated Offset-Free MPC on FPGA for 10-kHz Constrained In-Plane Control of 6-DOF Magnetic Levitation System," <em>IEEE Transactions on Industrial Informatics</em> (under review).</li>
-          <li class="pub-entry-full">C.H. Kim, H.M. Yoon, J.W. Jeong, E.K. Kim and J.Y. Yoon, "Design and Control of Dual Reluctance-Lorentz 6-DOF Magnetic Levitator for In-Plane Long-Stroke Motion and Low-Power Vertical Levitation," <em>IEEE/ASME Transactions on Mechatronics</em> (minor revision).</li>
+          <li class="pub-entry-full">C.H. Kim, H.M. Yoon, J.W. Jeong, E.K. Kim and J.Y. Yoon, "Design and Control of Dual Reluctance-Lorentz 6-DOF Magnetic Levitator for In-Plane Long-Stroke Motion and Low-Power Vertical Levitation," <em>IEEE/ASME Transactions on Mechatronics</em> (under review).</li>
           <li class="pub-entry-full">H.M. Yoon, C.H. Kim, K.J. Kang, J.M. Sung, E.K. Kim … and J.Y. Yoon, "Active 6-DOF Magnetic Levitator for Fully-Automated High-Throughput Large-Range Single-Mode Optical Fiber Alignment," <em>IEEE Transactions on Industrial Electronics</em> (under review).</li>
           <li class="pub-entry-full">S.M. Lee, Y.S. Kwon, J.W. Jeong, K.J. Kang, C.H. Kim and J.Y. Yoon, "Identification and Reduction of Normal-Direction Force Ripples in Permanent-Magnet Linear Synchronous Motors," <em>IEEE Transactions on Industrial Electronics</em>. <a href="assets/files/journal_paper_pmlsm.pdf" target="_blank">[PDF]</a></li>
           <li class="pub-entry-full">H.M. Yoon, S.M. Lee, J.W. Jung, K. Lee, J.J. Jung, C.H. Kim and J.Y. Yoon, "Study on Characteristics of SPGD Algorithm in Coherent Beam Combining with Phase and Tip-tilt Control Speed Differences," <em>Journal of the Korean Society for Precision Engineering</em>. <a href="assets/files/paper_cbc.pdf" target="_blank">[PDF]</a></li>
