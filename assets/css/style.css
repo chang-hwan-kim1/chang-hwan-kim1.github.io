@@ -318,7 +318,7 @@ a:hover { text-decoration: underline; }
   width: calc(50% - 5px);
   height: 260px;
   border-radius: 6px;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
 }
 
