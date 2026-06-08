@@ -319,6 +319,15 @@ a:hover { text-decoration: underline; }
   margin-right: -1.75rem;
 }
 
+#research-mpc .research-img-row {
+  margin-left: -3.5rem;
+  margin-right: -3.5rem;
+}
+
+#research-mpc .research-img-half {
+  height: 312px;
+}
+
 .research-img-half {
   width: calc(50% - 5px);
   height: 260px;
