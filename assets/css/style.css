@@ -309,7 +309,7 @@ a:hover { text-decoration: underline; }
 
 .research-img-row {
   display: flex;
-  gap: 10px;
+  gap: 0;
   margin: 0.75rem 0;
   align-items: flex-start;
 }
@@ -329,7 +329,7 @@ a:hover { text-decoration: underline; }
 }
 
 .research-img-half {
-  width: calc(50% - 5px);
+  width: 50%;
   height: 260px;
   object-fit: contain;
   object-position: center;
