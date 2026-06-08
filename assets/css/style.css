@@ -314,6 +314,11 @@ a:hover { text-decoration: underline; }
   align-items: flex-start;
 }
 
+.research-img-row--wide {
+  margin-left: -1.75rem;
+  margin-right: -1.75rem;
+}
+
 .research-img-half {
   width: calc(50% - 5px);
   height: 260px;
