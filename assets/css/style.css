@@ -317,6 +317,7 @@ a:hover { text-decoration: underline; }
 .research-img-half {
   height: 260px;
   width: auto;
+  flex: 0 0 auto;
   border-radius: 6px;
   display: block;
 }
