@@ -31,6 +31,10 @@
       </div>
 
       <div class="contact">
+        <a href="mailto:hwankim@umich.edu" class="contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+          hwankim@umich.edu
+        </a>
         <a href="mailto:ch_kim@yonsei.ac.kr" class="contact-item">
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
           ch_kim@yonsei.ac.kr
@@ -38,10 +42,10 @@
       </div>
 
       <nav class="sidebar-links">
-        <a href="https://scholar.google.com/citations?user=v9IBdNQAAAAJ&hl=ko&authuser=2" target="_blank">Google Scholar</a>
+        <a href="https://scholar.google.co.kr/citations?user=DUZ1KAoAAAAJ&hl=ko&authuser=1" target="_blank">Google Scholar</a>
         <a href="https://www.linkedin.com/in/chang-hwan-kim-24aa1b316/" target="_blank">LinkedIn</a>
-        <a href="https://drive.google.com/file/d/15HLORdIqBFYfHwEabvDqEzDjIDYBjxvq/view?usp=sharing" target="_blank">Curriculum Vitae</a>
-        <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">GitHub</a>
+        <a href="assets/files/CV_ChangHwanKim.pdf" target="_blank">Curriculum Vitae</a>
+        <a href="https://github.com/chang-hwan-kim1" target="_blank">GitHub</a>
       </nav>
     </div>
   </aside>
@@ -83,6 +87,7 @@
           <span class="research-venue">Journal paper in preparation</span>
         </div>
         <h3 class="research-title">Offset-Free MPC for a 6-DOF Magnetic Levitation System</h3>
+        <img src="assets/images/research_mpc.jpg" alt="Offset-Free MPC for 6-DOF Magnetic Levitation" class="research-img" />
         <p class="research-desc">Model predictive control (MPC) is well known for its high performance in motion control applications. However, due to the requirement of kHz-level sampling rates in 6-DOF magnetic levitation systems, MPC has rarely been applied to such systems. I develop an MPC structure lightweight enough for 10 kHz real-time control while achieving offset-free tracking performance, with a DNN approximating the QP solver and implemented on FPGA.</p>
         <div class="research-pubs">
           <p class="pub-entry">C. Kim (presenter), J. Kim, H. Yoon and J. Yoon, "Offset-Free Model Predictive Control of 6-DOF Magnetic Levitator for High-Precision Trajectory Tracking," <em>Korean Society for Precision Engineering Autumn Conference</em>, Nov. 2025.</p>
@@ -95,6 +100,10 @@
           <span class="research-venue">IEEE/ASME Transactions on Mechatronics</span>
         </div>
         <h3 class="research-title">Design and Control of a Novel 6-DOF Magnetic Levitator</h3>
+        <div class="research-img-row">
+          <img src="assets/images/research_dual_lev1.jpg" alt="6-DOF Magnetic Levitator design" class="research-img-half" />
+          <img src="assets/images/research_dual_lev2.jpg" alt="6-DOF Magnetic Levitator results" class="research-img-half" />
+        </div>
         <p class="research-desc">A novel 6-DOF magnetic levitator combining reluctance and Lorentz forces to achieve both long-stroke actuation and zero-power gravity compensation. Unlike conventional Lorentz-only systems that require constant current, the proposed dual-mode design uses reluctance forces for passive gravity support and Lorentz forces for dynamic motion. A working prototype demonstrated stable levitation with only 0.498 W power consumption at rest.</p>
         <div class="research-pubs">
           <p class="pub-entry">C. Kim, H. Yoon, J. Jeong, E. Kim and J. Yoon, "Dual Reluctance-Lorentz 6-DOF Magnetic Levitator for Long-Stroke Zero-Power Gravity Compensation," <em>IEEE/ASME Transactions on Mechatronics</em> (under review).</p>
@@ -107,6 +116,10 @@
           <span class="research-venue">PRESM 2025</span>
         </div>
         <h3 class="research-title">Vehicle Dynamics Control</h3>
+        <div class="research-img-row">
+          <img src="assets/images/research_vehicle1.jpg" alt="Vehicle dynamics control simulation" class="research-img-half" />
+          <img src="assets/images/research_vehicle2.jpg" alt="Vehicle dynamics control results" class="research-img-half" />
+        </div>
         <p class="research-desc">A gain-scheduled feedforward-feedback control system to reduce lateral acceleration, jerk, and tracking error during vehicle lane changes. The controller combines a feedforward module based on path geometry with an LQR feedback controller, using a 2-DOF dual-track vehicle model and a Luenberger-PI observer. Simulations at 60–120 kph showed up to 79.6% jerk reduction and 54.2% tracking error reduction compared to a feedback-only approach.</p>
         <div class="research-pubs">
           <p class="pub-entry">C. Kim (presenter), J. Kee, H. Jang, J. Wang and J. Yoon, "Gain-Scheduled Feedforward-Feedback Control for Reducing Lateral Acceleration and Jerk of Vehicle During Lane Changing Maneuver," <em>PRESM 2025</em>. <a href="https://presm.org/data/Regular%20Session/PP3-012.pdf" target="_blank">[Abstract]</a></p>
@@ -119,6 +132,10 @@
           <span class="research-venue">PRESM 2024 · Undergraduate Thesis</span>
         </div>
         <h3 class="research-title">Adaptive Control for Payload-Invariant Performance in a 6-DOF Magnetic Levitator</h3>
+        <div class="research-img-row">
+          <img src="assets/images/research_payload1.jpg" alt="Payload adaptive control setup" class="research-img-half" />
+          <img src="assets/images/research_payload2.jpg" alt="Payload adaptive control results" class="research-img-half" />
+        </div>
         <p class="research-desc">A control method to maintain dynamic performance of a 6-DOF hybrid-reluctance magnetic levitator under changing payload masses. A mass compensator, designed as a modified lead compensator, counteracts the dynamics altered by the payload. Experimental results showed that the crossover frequency was restored from 30 Hz to 50 Hz, and RMS tracking error was reduced by 98% under a 5 Hz circular motion command.</p>
         <div class="research-pubs">
           <p class="pub-entry">C. Kim (presenter), H. Yoon, J. Jung and J. Yoon, "Control Method for Maintaining Dynamic Performance of a 6-DOF Hybrid-reluctance-type Magnetic Levitator During Payload Mass Changes," <em>PRESM 2024</em>. <a href="https://drive.google.com/file/d/1S8iWCsJZF-m8VJpzerVnldl5MHbappRK/view?pli=1" target="_blank">[Abstract]</a></p>
@@ -131,6 +148,10 @@
           <span class="research-venue">Journal of KSPE · Collaboration with LIG Nex1 Co., Ltd.</span>
         </div>
         <h3 class="research-title">Laser CBC SPGD Control Algorithm Modeling &amp; Simulation</h3>
+        <div class="research-img-row">
+          <img src="assets/images/research_cbc1.jpg" alt="CBC SPGD system diagram" class="research-img-half" />
+          <img src="assets/images/research_cbc2.jpg" alt="CBC SPGD simulation results" class="research-img-half" />
+        </div>
         <p class="research-desc">An adaptive SPGD (Stochastic Parallel Gradient Descent) algorithm to improve convergence speed and stability in coherent beam combining (CBC) systems. Unlike conventional SPGD with fixed control parameters, the proposed method dynamically adjusts perturbation amplitude and learning rate based on real-time feedback. Simulations on 7- and 19-channel CBC systems showed 26.4% and 18.1% reductions in iteration count, respectively.</p>
         <div class="research-pubs">
           <p class="pub-entry">H. Yoon, S. Lee, J. Jung, K. Lee, J. Jung, C. Kim, et al., "Study on Characteristics of SPGD Algorithm in Coherent Beam Combining with Phase and Tip-tilt Control Speed Differences," <em>Journal of the Korean Society for Precision Engineering</em> (accepted).</p>
@@ -143,6 +164,10 @@
           <span class="research-venue">IEEE Transactions on Industrial Electronics</span>
         </div>
         <h3 class="research-title">Force Ripple Reduction Control of a PMLSM</h3>
+        <div class="research-img-row">
+          <img src="assets/images/research_pmlsm1.jpg" alt="PMLSM force ripple setup" class="research-img-half" />
+          <img src="assets/images/research_pmlsm2.jpg" alt="PMLSM force ripple results" class="research-img-half" />
+        </div>
         <p class="research-desc">A control-based method to reduce force ripples in iron-cored permanent-magnet linear synchronous motors (PMLSMs). By adjusting DQ-axis currents, the method actively cancels both tangential and normal force ripples using a physics-based force model. The proposed method achieved 87% reduction in tangential and 69% in normal-direction ripple (RMS).</p>
         <div class="research-pubs">
           <p class="pub-entry">S. Lee, Y. Kwon, J. Jeong, K. Kang, C. Kim and J. Yoon, "Identification and Reduction of Normal-Direction Force Ripples in Permanent-Magnet Linear Synchronous Motors," <em>IEEE Transactions on Industrial Electronics</em> (under review).</p>
@@ -155,6 +180,10 @@
           <span class="research-venue">IEEE Transactions on Industrial Electronics</span>
         </div>
         <h3 class="research-title">6-DOF Magnetic Levitator for High-Throughput Optical Fiber Alignment</h3>
+        <div class="research-img-row">
+          <img src="assets/images/research_fiber1.jpg" alt="Optical fiber alignment system" class="research-img-half" />
+          <img src="assets/images/research_fiber2.jpg" alt="Optical fiber alignment results" class="research-img-half" />
+        </div>
         <p class="research-desc">A compact 6-DOF magnetic levitation system combined with a real-time feedback-based Dynamic Spiral Searching (DSS) control algorithm for fully automated alignment of single-mode optical fibers. Unlike conventional multi-stage setups, this integrated system achieves long-range motion, fast dynamic response, and submicron precision within a single actuator platform.</p>
         <div class="research-pubs">
           <p class="pub-entry">H. Yoon, C. Kim, K. Kang, J. Sung, E. Kim, J. Jung, J. Park and J. Yoon, "Active 6-DOF Magnetic Levitator for Fully-Automated High-Throughput Large-Range Single-Mode Optical Fiber Alignment," <em>IEEE Transactions on Industrial Electronics</em> (under review).</p>
