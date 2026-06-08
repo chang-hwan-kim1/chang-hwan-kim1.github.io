@@ -116,6 +116,9 @@ a:hover { text-decoration: underline; }
 .contact {
   border-top: 1px solid var(--border);
   padding-top: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
 }
 
 .contact-item {
@@ -295,6 +298,27 @@ a:hover { text-decoration: underline; }
   margin-bottom: 0.6rem;
   line-height: 1.35;
   color: var(--ink);
+}
+
+.research-img {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 6px;
+  margin: 0.75rem 0;
+  display: block;
+}
+
+.research-img-row {
+  display: flex;
+  gap: 10px;
+  margin: 0.75rem 0;
+}
+
+.research-img-half {
+  width: calc(50% - 5px);
+  border-radius: 6px;
+  object-fit: cover;
+  display: block;
 }
 
 .research-desc {
