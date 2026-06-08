@@ -421,7 +421,9 @@ a:hover { text-decoration: underline; }
 
   .sidebar-links { flex-direction: column; }
 
-  .main { margin-left: 0; }
+  body { flex-direction: column; }
+
+  .main { margin-left: 0; width: 100%; }
 
   .section, .topnav, .site-footer { padding-left: 1.5rem; padding-right: 1.5rem; }
 }
