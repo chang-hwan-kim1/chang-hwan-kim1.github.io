@@ -312,12 +312,13 @@ a:hover { text-decoration: underline; }
   display: flex;
   gap: 10px;
   margin: 0.75rem 0;
+  align-items: flex-start;
 }
 
 .research-img-half {
   width: calc(50% - 5px);
+  height: auto;
   border-radius: 6px;
-  object-fit: cover;
   display: block;
 }
 
