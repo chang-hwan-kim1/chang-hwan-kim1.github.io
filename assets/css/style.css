@@ -359,6 +359,54 @@ a:hover { text-decoration: underline; }
 .pub-entry em { font-style: italic; color: var(--ink-2); }
 .pub-entry a  { font-size: 12px; }
 
+/* Other projects collage */
+.projects-collage {
+  display: flex;
+  gap: 6px;
+  margin: 0.75rem 0;
+  align-items: stretch;
+}
+
+.projects-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.projects-col-mid {
+  flex: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.projects-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  font-size: 13px;
+  color: var(--ink-3);
+  font-style: italic;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.projects-img {
+  width: 100%;
+  flex: 1;
+  min-height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.projects-img-tall {
+  flex: 1;
+  min-height: 260px;
+}
+
 /* Publications section */
 .pub-group { margin-bottom: 2rem; }
 
