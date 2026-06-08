@@ -2,7 +2,7 @@
 
 Personal academic website built with plain HTML/CSS, hosted on GitHub Pages.
 
-**Live site:** https://YOUR_GITHUB_USERNAME.github.io
+**Live site:** https://chang-hwan-kim1.github.io/
 
 ## How to update
 
