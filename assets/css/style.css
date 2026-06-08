@@ -403,22 +403,22 @@ a:hover { text-decoration: underline; }
   }
 
   .sidebar-inner {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 1.5rem;
     gap: 1rem;
   }
 
-  .avatar-wrap { width: 64px; height: 64px; }
-  .avatar, .avatar-placeholder { width: 64px; height: 64px; }
+  .avatar-wrap { width: 80px; height: 80px; }
+  .avatar, .avatar-placeholder { width: 80px; height: 80px; }
 
   .affil, .contact, .sidebar-links {
-    border-top: none;
-    padding-top: 0;
+    border-top: 1px solid var(--border);
+    padding-top: 0.75rem;
+    width: 100%;
   }
 
-  .sidebar-links { flex-direction: row; flex-wrap: wrap; }
+  .sidebar-links { flex-direction: column; }
 
   .main { margin-left: 0; }
 
