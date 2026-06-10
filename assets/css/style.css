@@ -328,6 +328,16 @@ a:hover { text-decoration: underline; }
   height: 359px;
 }
 
+#research-mpc .research-img-row .research-img-half:first-child {
+  object-position: right center;
+  border-radius: 6px 0 0 6px;
+}
+
+#research-mpc .research-img-row .research-img-half:last-child {
+  object-position: left center;
+  border-radius: 0 6px 6px 0;
+}
+
 .research-img-half {
   width: 50%;
   height: 260px;
