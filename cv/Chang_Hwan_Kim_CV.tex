@@ -1,0 +1,267 @@
+% =====================================================================
+%  Curriculum Vitae — Chang Hwan Kim
+%  Compiles with pdfLaTeX or XeLaTeX (Overleaf / TeX Live full).
+%  Edit the content below; layout macros are defined in the preamble.
+% =====================================================================
+\documentclass[10pt,letterpaper]{article}
+
+% ---------- Packages ----------
+\usepackage{fontawesome5}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[letterpaper,top=0.65in,bottom=0.8in,left=0.75in,right=0.75in,footskip=0.35in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+
+% ---------- Colors ----------
+\definecolor{linkblue}{RGB}{0,79,144}
+\definecolor{softgray}{gray}{0.55}
+
+% ---------- Basic settings ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\color{softgray}\small\textit{Chang Hwan Kim -- Page \thepage\ of \pageref*{LastPage}}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.0}
+\raggedright
+\hypersetup{pdftitle={Chang Hwan Kim's CV},pdfauthor={Chang Hwan Kim},colorlinks=false}
+
+% ---------- Section headings ----------
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{-7pt}\rule{\textwidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{8pt}{1pt}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{3pt}{2pt}
+
+% ---------- Lists ----------
+\setlist[itemize]{label=$\circ$,leftmargin=1.6em,labelsep=0.5em,itemsep=0pt,topsep=1pt,parsep=0pt,partopsep=0pt}
+
+% ---------- Macros ----------
+% Linked label with external-link icon, e.g. \extlink{URL}{PDF}
+\newcommand{\extlink}[2]{\href{#1}{\color{linkblue}[#2]~\scriptsize\faExternalLink*}}
+% Header contact item
+\newcommand{\contact}[3]{\href{#2}{#1~#3}}
+% Two-line entry: {bold left}{italic right}{italic left}{right}
+\newcommand{\entry}[4]{\textbf{#1}\hfill\textit{#2}\par\nopagebreak\textit{#3}\hfill{#4}\par\nopagebreak}
+% One-line entry: {bold left}{italic right}
+\newcommand{\entryline}[2]{\textbf{#1}\hfill\textit{#2}\par\nopagebreak}
+% Sub-line inside an entry: {italic left}{right}
+\newcommand{\subline}[2]{\textit{#1}\hfill{#2}\par\nopagebreak}
+% Project heading inside an entry: {title}{dates}
+\newcommand{\project}[2]{\vspace{2pt}\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X r@{}}\textbf{\textit{#1}} & \textit{#2}\end{tabularx}\par\nopagebreak}
+% Gap between entries
+\newcommand{\entrygap}{\vspace{3pt}}
+% Publication item: {title}{authors}{venue and links}
+\newcommand{\pub}[4]{\item[#1.] #2\\ #3\\ #4}
+% Self name in author lists
+\newcommand{\me}{\textbf{C.H. Kim}}
+
+% Publication lists with prefixed labels (J1., C1., ...)
+\newlist{publist}{enumerate}{1}
+\setlist[publist]{leftmargin=2.4em,labelsep=0.6em,align=right,itemsep=4pt,topsep=2pt,parsep=0pt}
+
+\begin{document}
+
+% =====================================================================
+%  Header
+% =====================================================================
+\vspace*{-6pt}
+\hfill{\color{softgray}\small\textit{Last updated in Nov. 2026}}\par
+\vspace{2pt}
+\begin{center}
+{\fontsize{24pt}{28pt}\selectfont\bfseries Chang Hwan Kim}\\[7pt]
+\small
+\contact{\faEnvelope[regular]}{mailto:hwankim@umich.edu}{hwankim@umich.edu}\hspace{1.4em}
+\contact{\faGlobe}{https://chang-hwan-kim1.github.io/}{Website}\hspace{1.4em}
+\contact{\faGraduationCap}{https://scholar.google.com/citations?user=DUZ1KAoAAAAJ}{Scholar}\hspace{1.4em}
+\contact{\faLinkedinIn}{https://www.linkedin.com/in/chang-hwan-kim-24aa1b316/}{LinkedIn}\hspace{1.4em}
+\contact{\faGithub}{https://github.com/chang-hwan-kim1}{GitHub}
+\end{center}
+\vspace{-8pt}
+
+% =====================================================================
+\section{Education}
+% =====================================================================
+\entry{University of Michigan}{Aug. 2026 -- Present}{Ph.D. in Mechanical Engineering}{Ann Arbor, MI, USA}
+\begin{itemize}
+  \item Advisor: Prof. Gabor Orosz
+\end{itemize}
+\entrygap
+\entry{Yonsei University}{Sep. 2024 -- Aug. 2026}{M.S. in Mechanical Engineering}{Seoul, Korea}
+\begin{itemize}
+  \item \textbf{GPA}: 4.23/4.30 (3.97/4.00)
+  \item Advisor: Prof. Jun Young Yoon
+\end{itemize}
+\entrygap
+\subline{B.S. in Mechanical Engineering}{\textit{Mar. 2019 -- Aug. 2024}}
+\begin{itemize}
+  \item \textbf{GPA}: 4.13/4.30 (3.92/4.00), ranked 1st out of 145 in major, \textbf{Summa Cum Laude}
+  \item Includes a 1.5-year leave of absence for mandatory military service (Jan. 2021 -- Jul. 2022)
+\end{itemize}
+
+% =====================================================================
+\section{Research Interests}
+% =====================================================================
+Vehicle dynamics and control, model predictive control (MPC), control barrier functions (CBF), design and motion control of mechatronic systems
+
+% =====================================================================
+\section{Publications}
+% =====================================================================
+\subsection{Journal Articles}
+\begin{publist}
+  \pub{J5}{DNN-Approximated Offset-Free MPC on FPGA for 10-kHz Constrained In-Plane Control of 6-DOF Magnetic Levitation System}
+      {\me, J.J. Kim, H.M. Yoon, J.Y. Yoon}
+      {\textit{IEEE Transactions on Industrial Informatics} (\textbf{TII}), Early Access, 2026 \extlink{https://doi.org/10.1109/TII.2026.3727055}{DOI} \extlink{https://chang-hwan-kim1.github.io/assets/files/journal_paper_mpc.pdf}{PDF}}
+  \pub{J4}{Design and Control of Dual Reluctance-Lorentz 6-DOF Magnetic Levitator for In-Plane Long-Stroke Motion and Low-Power Vertical Levitation}
+      {\me, H.M. Yoon, J.W. Jung, E.K. Kim, J.Y. Yoon}
+      {\textit{IEEE/ASME Transactions on Mechatronics} (\textbf{TMECH}), under review (minor revision)}
+  \pub{J3}{Active 6-DOF Magnetic Levitator for Fully-Automated High-Throughput Large-Range Single-Mode Optical Fiber Alignment}
+      {H.M. Yoon, \me, K.J. Kang, J.M. Sung, E.K. Kim, \ldots, J.Y. Yoon}
+      {\textit{IEEE Transactions on Industrial Electronics} (\textbf{TIE}) \extlink{https://chang-hwan-kim1.github.io/assets/files/journal_paper_fiber.pdf}{PDF}}
+  \pub{J2}{Identification and Reduction of Normal-Direction Force Ripples in Permanent-Magnet Linear Synchronous Motors}
+      {S.M. Lee, Y.S. Kwon, J.H. Jung, K.J. Kang, \me, J.Y. Yoon}
+      {\textit{IEEE Transactions on Industrial Electronics} (\textbf{TIE}) \extlink{https://chang-hwan-kim1.github.io/assets/files/journal_paper_pmlsm.pdf}{PDF}}
+  \pub{J1}{Study on Characteristics of SPGD Algorithm in Coherent Beam Combining with Phase and Tip-Tilt Control Speed Differences}
+      {H.M. Yoon, S.M. Lee, J.W. Jung, K. Lee, J.J. Jung, \me, J.Y. Yoon}
+      {\textit{Journal of the Korean Society for Precision Engineering} (\textbf{JKSPE}) \extlink{https://chang-hwan-kim1.github.io/assets/files/journal_paper_cbc.pdf}{PDF}}
+\end{publist}
+
+\subsection{Conference Presentations}
+\begin{publist}
+  \pub{C4}{Control Barrier Function-Based Safety-Critical Control of 6-DOF Magnetic Levitation System}
+      {\me, J. Kim, H.M. Yoon, J.Y. Yoon}
+      {\textit{Korean Society for Precision Engineering Spring Conference} (\textbf{KSPE}), May 2026 \extlink{https://chang-hwan-kim1.github.io/assets/files/conference_abstract_cbf_2026.pdf}{Abstract}}
+  \pub{C3}{Offset-Free Model Predictive Control of 6-DOF Magnetic Levitator for High-Precision Trajectory Tracking}
+      {\me, J. Kim, H.M. Yoon, J.Y. Yoon}
+      {\textit{Korean Society for Precision Engineering Autumn Conference} (\textbf{KSPE}), Nov. 2025 \extlink{https://chang-hwan-kim1.github.io/assets/files/conference_abstract_mpc_2025.pdf}{Abstract}}
+  \pub{C2}{Gain-Scheduled Feedforward-Feedback Control for Reducing Lateral Acceleration and Jerk of Vehicle During Lane Changing Maneuver}
+      {\me, J.K. Lee, H.S. Jang, J. Wang, J.Y. Yoon}
+      {\textit{International Conference on Precision Engineering and Sustainable Manufacturing} (\textbf{PRESM 2025}), Jul. 2025 \extlink{https://chang-hwan-kim1.github.io/assets/files/conference_abstract_vehicle_2025.pdf}{Abstract}}
+  \pub{C1}{Control Method for Maintaining Dynamic Performance of a 6-DOF Hybrid-Reluctance-Type Magnetic Levitator During Payload Mass Changes}
+      {\me, H.M. Yoon, J.W. Jung, J.Y. Yoon}
+      {\textit{International Conference on Precision Engineering and Sustainable Manufacturing} (\textbf{PRESM 2024}), Jul. 2024, \textbf{Outstanding Presentation Award} \extlink{https://chang-hwan-kim1.github.io/assets/files/conference_abstract_payload_2024.pdf}{Abstract}}
+\end{publist}
+
+% =====================================================================
+\section{Research Experience}
+% =====================================================================
+\entryline{Yonsei University (Advisor: Prof. Jun Young Yoon)}{Seoul, Korea}
+\subline{Graduate Researcher}{\textit{Sep. 2024 -- Aug. 2026}}
+\subline{Undergraduate Researcher}{\textit{Jan. 2023 -- Aug. 2024}}
+
+\project{FPGA-Based DNN-Approximated Offset-Free MPC for 6-DOF Magnetic Levitator}{Mar. 2025 -- Aug. 2026}
+\begin{itemize}
+  \item Designed an offset-free model predictive controller (MPC) with a disturbance observer for constrained in-plane motion control (C3).
+  \item Approximated the MPC law with a deep neural network (DNN) and implemented it on an FPGA, achieving constrained control at 10 kHz (J5).
+  \item Developed control barrier function (CBF)-based safety-critical control for the same platform (C4).
+\end{itemize}
+
+\project{Design and Control of 6-DOF Magnetic Levitator for Long-Stroke Zero-Power Gravity Compensation}{Jan. 2024 -- Jun. 2025}
+\begin{itemize}
+  \item Designed and fabricated a 6-DOF magnetic levitator that combines reluctance forces for gravity compensation with Lorentz forces for long-stroke in-plane motion (J4).
+  \item Developed and implemented 6-DOF feedback and feedforward controllers for precision motion control; the prototype levitates stably with only 0.498 W at rest.
+\end{itemize}
+
+\project{Vehicle Lateral Dynamics Control for Reducing Lateral Acceleration and Jerk During Lane Changes}{Sep. 2024 -- Feb. 2025}
+\begin{itemize}
+  \item Developed a gain-scheduled preview feedforward controller and integrated it with a lane-keeping LQR feedback controller (C2).
+  \item Used a 2-DOF dual-track vehicle model with a linear tire model and Ackermann-geometry front-wheel steering, and designed a Luenberger-PI observer for state estimation.
+  \item Reduced lateral acceleration, jerk, and lateral distance error by 36.4\%, 79.6\%, and 54.2\% on average, respectively, relative to feedback-only control over 60--120 km/h in simulation.
+\end{itemize}
+
+\project{Force Ripple Reduction Control of Permanent-Magnet Linear Synchronous Motor (PMLSM)}{Mar. 2023 -- Mar. 2024}
+\begin{itemize}
+  \item Designed a DQ-axis current control method that reduces both normal- and tangential-direction force ripples, achieving 69\% and 87\% RMS reduction, respectively (J2).
+  \item Proposed a method to identify the motor parameters that induce force ripples in iron-cored PMLSMs.
+\end{itemize}
+
+\project{Adaptive Control of Low-Power 6-DOF Hybrid-Reluctance-Type Magnetic Levitator}{Mar. 2023 -- Dec. 2023}
+\begin{itemize}
+  \item Designed a disturbance observer-based method to estimate the payload of the system.
+  \item Implemented a controller that maintains the dynamic performance of the system under payload changes (C1, undergraduate thesis).
+\end{itemize}
+
+% =====================================================================
+\section{Industry-Sponsored Projects}
+% =====================================================================
+\entry{Intelligent Controller Development for PAPS-Based Robotic C-Arm}{Sep. 2025 -- Aug. 2026}{In collaboration with GENORAY Co., Ltd.}{}
+\begin{itemize}
+  \item Designed sub-optimal collision-free paths and trajectories for a 4-DOF robotic C-arm using the A* algorithm.
+  \item Implemented and tested the planners in a MATLAB simulation environment to ensure avoidance of the patient area.
+\end{itemize}
+\entrygap
+\entry{Independent Drive and Control System for Styler Moving Hanger}{Nov. 2024 -- Oct. 2025}{In collaboration with LG Electronics Inc.}{}
+\begin{itemize}
+  \item Designed a novel drive mechanism enabling independent movement of the styler's moving hanger.
+  \item Developed a motion controller that compensates for actuator cogging force and bearing friction.
+\end{itemize}
+\entrygap
+\entry{Laser CBC SPGD Control Modeling and Simulation Development}{Apr. 2024 -- Mar. 2025}{In collaboration with LIG Nex1 Co., Ltd.}{}
+\begin{itemize}
+  \item Designed a stochastic parallel gradient descent (SPGD) algorithm for 19-channel laser coherent beam combining (J1).
+  \item Developed a MATLAB simulator for laser beam modeling and SPGD performance evaluation.
+\end{itemize}
+
+% =====================================================================
+\section{Honors and Scholarships}
+% =====================================================================
+\entryline{Summa Cum Laude (Top 1\%)}{Aug. 2024}
+Graduated with highest honors from Yonsei University; one of four recipients in the College of Engineering.\par
+\entrygap
+\entryline{Outstanding Presentation Award}{Jul. 2024}
+Awarded at the International Conference on Precision Engineering and Sustainable Manufacturing (PRESM 2024).\par
+\entrygap
+\entryline{Semester Honors, Yonsei University}{Spring 2019, Fall 2019, Fall 2023, Spring 2024}
+\entrygap
+\entryline{Accelerated B.S.--M.S. Program Scholarship, Yonsei University}{Sep. 2024 -- Aug. 2026}
+Full tuition for 4 semesters, awarded for academic excellence upon early admission to the master's program.\par
+\entrygap
+\entryline{Brain Korea 21 (BK21) Scholarship, National Research Foundation of Korea}{Sep. 2024 -- Aug. 2026}
+Awarded to support graduate research in strategic fields under Korea's national research initiative.\par
+\entrygap
+\entryline{Daesang Foundation Scholarship, Daesang Group}{Mar. 2020 -- Aug. 2024}
+Full tuition for 6 semesters, awarded to outstanding undergraduate students.\par
+\entrygap
+\entryline{Yonsei Eminence Scholarship, Yonsei University}{Sep. 2019 -- Feb. 2020}
+One-third tuition for one semester, awarded for academic excellence.\par
+
+% =====================================================================
+\section{Teaching Experience}
+% =====================================================================
+\entry{MEU3014 -- Mechatronics}{Fall 2024}{Teaching Assistant, Yonsei University}{}
+\begin{itemize}
+  \item Topics: electronics, sensors, motors, linear control theory, and control practice using a microcontroller.
+\end{itemize}
+\entrygap
+\entry{MEU3007 -- Independent Study}{Spring 2025}{Teaching Assistant, Yonsei University}{}
+\begin{itemize}
+  \item Supervised an undergraduate student on their undergraduate thesis.
+\end{itemize}
+
+% =====================================================================
+\section{Service and Other Experience}
+% =====================================================================
+\entry{Republic of Korea Army}{Jan. 2021 -- Jul. 2022}{Infantry Rifle Squad Leader}{Inje, Korea}
+\begin{itemize}
+  \item Served in the Opposing Force (OPFOR) regiment, 2nd Mountain Regiment, Korea Combat Training Center (KCTC).
+\end{itemize}
+\entrygap
+\entry{Korean Red Cross Blood Management Center}{Jun. 2017 -- Present}{Regular Blood Donor (20 donations since Jun. 2017)}{Seoul, Korea}
+
+% =====================================================================
+\section{Skills}
+% =====================================================================
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+  \textbf{Programming} & MATLAB/Simulink, Python, C, LabVIEW, \LaTeX \\
+  \textbf{Toolboxes} & MATLAB MPC, Control System, Optimization, Deep Learning, and Robotics Toolboxes; Vehicle Dynamics Blockset; MPT3 \\
+  \textbf{Design \& Simulation} & ANSYS Electronics, Autodesk Inventor \\
+  \textbf{Languages} & Korean (native), English (full professional proficiency) \\
+\end{tabularx}
+
+\end{document}
