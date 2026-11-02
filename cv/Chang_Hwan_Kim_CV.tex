@@ -117,7 +117,7 @@ Vehicle dynamics and control, model predictive control (MPC), control barrier fu
 \begin{publist}
   \pub{J5}{DNN-Approximated Offset-Free MPC on FPGA for 10-kHz Constrained In-Plane Control of 6-DOF Magnetic Levitation System}
       {\me, J.J. Kim, H.M. Yoon, J.Y. Yoon}
-      {\textit{IEEE Transactions on Industrial Informatics} (\textbf{TII}), Early Access, 2026}
+      {\textit{IEEE Transactions on Industrial Informatics} (\textbf{TII}), Early Access, 2026 \extlink{https://doi.org/10.1109/TII.2026.3727055}{DOI} \extlink{https://chang-hwan-kim1.github.io/assets/files/journal_paper_mpc.pdf}{PDF}}
   \pub{J4}{Design and Control of Dual Reluctance-Lorentz 6-DOF Magnetic Levitator for In-Plane Long-Stroke Motion and Low-Power Vertical Levitation}
       {\me, H.M. Yoon, J.W. Jung, E.K. Kim, J.Y. Yoon}
       {\textit{IEEE/ASME Transactions on Mechatronics} (\textbf{TMECH}), under review (minor revision)}
@@ -141,10 +141,10 @@ Vehicle dynamics and control, model predictive control (MPC), control barrier fu
       {\me, J. Kim, H.M. Yoon, J.Y. Yoon}
       {\textit{Korean Society for Precision Engineering Autumn Conference} (\textbf{KSPE}), Nov. 2025 \extlink{https://chang-hwan-kim1.github.io/assets/files/conference_abstract_mpc_2025.pdf}{Abstract}}
   \pub{C2}{Gain-Scheduled Feedforward-Feedback Control for Reducing Lateral Acceleration and Jerk of Vehicle During Lane Changing Maneuver}
-      {\me, J. Kee, H. Jang, J. Wang, J.Y. Yoon}
-      {\textit{International Conference on Precision Engineering and Sustainable Manufacturing} (\textbf{PRESM 2025}), Jul. 2025 \extlink{https://presm.org/data/Regular\%20Session/PP3-012.pdf}{Abstract}}
+      {\me, J.K. Lee, H.S. Jang, J. Wang, J.Y. Yoon}
+      {\textit{International Conference on Precision Engineering and Sustainable Manufacturing} (\textbf{PRESM 2025}), Jul. 2025 \extlink{https://chang-hwan-kim1.github.io/assets/files/conference_abstract_vehicle_2025.pdf}{Abstract}}
   \pub{C1}{Control Method for Maintaining Dynamic Performance of a 6-DOF Hybrid-Reluctance-Type Magnetic Levitator During Payload Mass Changes}
-      {\me, H.M. Yoon, J. Jung, J.Y. Yoon}
+      {\me, H.M. Yoon, J.W. Jung, J.Y. Yoon}
       {\textit{International Conference on Precision Engineering and Sustainable Manufacturing} (\textbf{PRESM 2024}), Jul. 2024, \textbf{Outstanding Presentation Award} \extlink{https://chang-hwan-kim1.github.io/assets/files/conference_abstract_payload_2024.pdf}{Abstract}}
 \end{publist}
 
@@ -171,8 +171,8 @@ Vehicle dynamics and control, model predictive control (MPC), control barrier fu
 \project{Vehicle Lateral Dynamics Control for Reducing Lateral Acceleration and Jerk During Lane Changes}{Sep. 2024 -- Feb. 2025}
 \begin{itemize}
   \item Developed a gain-scheduled preview feedforward controller and integrated it with a lane-keeping LQR feedback controller (C2).
-  \item Used a single-track vehicle model with Ackermann steering geometry and designed a Luenberger-PI observer for state estimation.
-  \item Reduced jerk by up to 79.6\% and tracking error by up to 54.2\% relative to feedback-only control over 60--120 km/h in simulation.
+  \item Used a 2-DOF dual-track vehicle model with a linear tire model and Ackermann-geometry front-wheel steering, and designed a Luenberger-PI observer for state estimation.
+  \item Reduced lateral acceleration, jerk, and lateral distance error by 36.4\%, 79.6\%, and 54.2\% on average, respectively, relative to feedback-only control over 60--120 km/h in simulation.
 \end{itemize}
 
 \project{Force Ripple Reduction Control of Permanent-Magnet Linear Synchronous Motor (PMLSM)}{Mar. 2023 -- Mar. 2024}
